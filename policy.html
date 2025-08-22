@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Policy — Merciful Ministry</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Merciful Ministry — Policies & Terms. EIN 845086626. We raise and accept donations for community charity.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="images/logo.png" alt="Merciful Ministry logo">
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="policy.html" class="active">Policy</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section container">
+  <h1>Merciful Ministry — Policies</h1>
+  <p>Merciful Ministry is a California Nonprofit Public Benefit Corporation organized for charitable purposes. Our specific purpose is to <strong>raise and accept donations for community charity</strong>. EIN: <strong>845086626</strong>.</p>
+
+  <h2>Privacy Policy</h2>
+  <p>We only collect the information needed to operate our charitable activities and communicate with you. This may include: name, email, phone, postal address, donation amount/date (no full payment card numbers are stored by us), and messages you send us.</p>
+  <ul>
+    <li><strong>How we use data:</strong> issuing donation receipts, acknowledging gifts, responding to inquiries, compliance/reporting, and sending updates you request.</li>
+    <li><strong>Processors:</strong> we may use reputable third-party processors (e.g., payment and email services) that process data for us under appropriate safeguards.</li>
+    <li><strong>Retention:</strong> only as long as necessary for legal, accounting, or operational needs.</li>
+    <li><strong>Your choices:</strong> you may request access, correction, or deletion of your personal information by emailing <a href="mailto:info@mercifulministry.org">info@mercifulministry.org</a>.</li>
+  </ul>
+
+  <h3>Cookies & Analytics</h3>
+  <p>We may use basic analytics and cookies to understand site usage and improve our content. You can disable cookies in your browser; the site will still work.</p>
+
+  <h2>Donation & Refund Policy</h2>
+  <ul>
+    <li>Donations support our charitable work. Contributions are generally <strong>non-refundable</strong>.</li>
+    <li>If a processing error or unauthorized transaction is suspected, contact us within <strong>7 days</strong> at <a href="mailto:info@mercifulministry.org">info@mercifulministry.org</a> and we will review promptly.</li>
+    <li>Receipts will note our legal name and EIN <strong>845086626</strong>. Tax deductibility depends on your circumstances; please consult a tax advisor.</li>
+    <li>Restricted gifts will be used for the designated purpose as feasible; if a project is fully funded or no longer feasible, funds may be re-designated to the most similar charitable purpose.</li>
+  </ul>
+
+  <h2>Non-Discrimination</h2>
+  <p>We welcome all people and provide services without discrimination based on race, color, national origin, ancestry, sex, gender identity or expression, sexual orientation, age, disability, religion, or creed.</p>
+
+  <h2>Child Privacy</h2>
+  <p>We do not knowingly collect personal information from children under 13. If you believe a child provided information, please contact us so we can delete it.</p>
+
+  <h2>Accessibility</h2>
+  <p>We strive to make this website accessible on mobile and desktop. If you encounter a barrier or need an accommodation, email us and we’ll work to resolve it.</p>
+
+  <h2>Intellectual Property</h2>
+  <p>Unless otherwise noted, website content is © <span id="year"></span> Merciful Ministry. You may share content for non-commercial, educational purposes with attribution. Logos and trademarks remain the property of their respective owners.</p>
+
+  <h2>Website Terms of Use</h2>
+  <ul>
+    <li>Content is provided for general information and does not constitute legal or tax advice.</li>
+    <li>Links to third-party sites are for convenience and do not imply endorsement.</li>
+    <li>We may update these policies periodically; changes take effect upon posting.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    Address: 18022 Cowan #245, Irvine, CA 92614<br>
+    Email: <a href="mailto:info@mercifulministry.org">info@mercifulministry.org</a><br>
+    Phone: <a href="tel:+10000000000">+1 000 000 0000</a>
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Merciful Ministry</div>
+      <div class="small">A California Nonprofit Public Benefit Corporation — EIN 845086626</div>
+    </div>
+    <div>
+      <div class="small"><strong>Registered in California</strong><br>Nonprofit Public Benefit Corporation (501(c)(3))</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>18022 Cowan #245, Irvine, CA 92614<br>
+        <strong>Email:</strong> <a href="mailto:info@mercifulministry.org">info@mercifulministry.org</a><br>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){ b.addEventListener('click',()=>{ const open=getComputedStyle(l).display==='flex'; l.style.display=open?'none':'flex'; b.setAttribute('aria-expanded', open?'false':'true'); }); }
+  // Year
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
